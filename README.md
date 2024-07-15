@@ -1,1 +1,2 @@
-# Snake-Mania
+A classic arcade-style game where you control a hungry snake that grows longer as it eats food pellets. Navigate through the game board using the arrow keys to collect food and avoid crashing into the walls or yourself. The twist? The snake's speed increases with each food pellet consumed, making the game increasingly challenging as you progress!
+Slither through the board, devouring food and growing stronger. But beware, your speed and hunger will be your downfall!
