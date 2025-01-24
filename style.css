@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    background-color:#42292c ;
+}
+.body{
+    background-size: 100vw 100vh;
+    background-size: cover;
+    max-height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.body img{
+    padding-left: 42%; 
+    height: 100vh; 
+    position: fixed; 
+    padding-bottom: 10px; 
+    /*position relative to parent div fixed*/  
+}
+.name{ 
+/*Removes image from normal document flow(parent) and  allows you to move and ajust it's position in any way.*/
+    position: absolute;
+    height: 70px;       
+    width: auto;
+    top: 5%;         /*margin*/
+    left: 45%;    
+}
+.name img{
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 1; 
+    background: none;
+}
+#board{
+    position: fixed;
+    width: 50vw;
+    height: 90vh;
+    border: 2px solid white;
+    margin-left: 4%;
+    margin-top: 2%;
+    margin-bottom: 30%;
+
+    background-image: url("img/2.jpg");
+    background-size: cover;
+
+    display: grid;
+    grid-template-rows: repeat(18,1fr);     /* making a grid of a box, 1fr=1 fration/unit*/
+    grid-template-columns: repeat(18,1fr);  /*grid=18X18*/
+}
+#scoreBox{
+    position: fixed;    
+    color: #ffffff;
+    top: 160px;
+    right: 448px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+.head{
+    background: linear-gradient(#ff0062,#ff81c0);
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+}
+.snake{
+    background: linear-gradient(white,#f14084);
+    border-radius: 20px;
+}
+.food{
+    /* background-color: #ffffff; */
+    background: linear-gradient(white,#f14084);
+    border-radius: 20px;
+}
+
+
+
+
+
+
